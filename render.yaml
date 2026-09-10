@@ -2,6 +2,7 @@ services:
   - type: web
     name: tj-tutoring-api
     runtime: python
+    plan: free
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: flask --app run.py db upgrade && exec gunicorn --workers 1 --bind 0.0.0.0:$PORT run:app
@@ -31,3 +32,4 @@ databases:
     plan: free
     databaseName: tjtutoring
     user: tjtutoring
+    
