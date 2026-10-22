@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Become a Tutor — TJ Tutoring Academy</title><meta name="description" content="Apply to join TJ Tutoring Academy as an online tutor supporting students worldwide."><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"></head><body>
+<nav class="site-nav"><div class="wrap"><a href="index.html" class="brand"><span class="stamp"><svg class="logo-icon" role="img" aria-label="TJ Tutoring"><use href="assets/icons.svg#cap"></use></svg></span>TJ Tutoring</a><ul class="nav-links"><li><a href="index.html#about">About</a></li><li><a href="index.html#subjects">Subjects</a></li><li><a href="index.html#how">How It Works</a></li><li><a href="index.html#pricing">Pricing</a></li><li><a href="index.html#faqs">FAQs</a></li><li><a href="contact.html">Contact</a></li></ul><div class="nav-cta"><a href="contact.html" class="btn btn-primary">Book a Free Assessment <span class="arrow-icon"><svg class="ui-icon" aria-hidden="true"><use href="assets/icons.svg#arrow"></use></svg></span></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><svg class="ui-icon" aria-hidden="true"><use href="assets/icons.svg#menu"></use></svg></button></div></div></nav>
+<header class="page-hero"><div class="wrap"><div class="eyebrow">Join the TJ tutor team</div><h1>Teach students wherever they are learning.</h1><p class="lede">We're looking for excellent tutors who can explain clearly, build confidence and adapt to different school systems around the world.</p></div></header>
+<section class="form-section"><div class="wrap"><div class="form-shell"><div class="form-card"><h3>Tutor application</h3><p class="sub">Tell us about your experience, subjects and the curricula you can support. We review applications within 5 working days.</p><div id="formAlert" class="form-alert"></div><form id="applyForm" novalidate>
+      <div class="field-row"><div class="field"><label for="full_name">Full name *</label><input type="text" id="full_name" name="full_name" required minlength="2" maxlength="120" placeholder="Your full name"></div>
+      <div class="field"><label for="email">Email address *</label><input type="email" id="email" name="email" required placeholder="you@example.com"></div></div>
+      <div class="field-row"><div class="field"><label for="phone">Phone / WhatsApp *</label><input type="tel" id="phone" name="phone" required minlength="6" maxlength="30" placeholder="+1 000 000 0000"></div>
+      <div class="field"><label for="location">Current location</label><input type="text" id="location" name="location" maxlength="120" placeholder="City, country"></div></div>
+      <div class="field-row"><div class="field"><label for="subjects">Subjects you teach *</label><input type="text" id="subjects" name="subjects" required minlength="2" maxlength="255" placeholder="e.g. Mathematics, Physics"><div class="hint">Separate multiple subjects with commas.</div></div>
+      <div class="field"><label for="levels">Levels / curricula</label><input type="text" id="levels" name="levels" maxlength="255" placeholder="e.g. GCSE, Grade 8, Year 10, A-Level"></div></div>
+      <div class="field"><label for="qualification">Qualifications *</label><input type="text" id="qualification" name="qualification" required minlength="2" maxlength="255" placeholder="Degree, certifications, relevant training"></div>
+      <div class="field-row"><div class="field"><label for="years_experience">Years of teaching experience</label><input type="number" id="years_experience" name="years_experience" min="0" max="60" value="0"></div>
+      <div class="field"><label for="availability">Availability</label><input type="text" id="availability" name="availability" maxlength="255" placeholder="e.g. Weekday evenings, UTC-5"></div></div>
+      <div class="field"><label for="resume_url">Link to CV / portfolio</label><input type="url" id="resume_url" name="resume_url" placeholder="https://..."><div class="hint">Optional — use a shareable link.</div></div>
+      <div class="field"><label for="cover_note">Anything else we should know?</label><textarea id="cover_note" name="cover_note" maxlength="4000" placeholder="Tell us about your teaching style, experience with international students or curricula, and the age groups you enjoy teaching."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Submit Application</button>
+    </form></div><aside class="aside-card"><h4>What we value</h4><div class="aside-line"><span>01</span><span><strong>Strong subject knowledge</strong>You understand your subject deeply and can explain it simply.</span></div><div class="aside-line"><span>02</span><span><strong>Student-centred teaching</strong>You adapt to different abilities, learning speeds and goals.</span></div><div class="aside-line"><span>03</span><span><strong>Professional communication</strong>You keep students supported and parents informed.</span></div><hr><div class="aside-line"><span>🌎</span><span><strong>International experience is welcome</strong>US, UK, Canadian, Australian and other English-language curricula.</span></div></aside></div></div></section>
+<footer class="site-footer"><div class="wrap"><div class="footer-grid"><div><a href="index.html" class="brand" style="color:#fff;margin-bottom:14px"><span class="stamp"><svg class="logo-icon" role="img" aria-label="TJ Tutoring"><use href="assets/icons.svg#cap"></use></svg></span>TJ Tutoring</a><p class="footer-copy">Personalised one-to-one online tutoring for students worldwide.</p></div><div><h5>Explore</h5><a href="index.html#about">About</a><a href="index.html#subjects">Subjects</a><a href="index.html#pricing">Pricing</a></div><div><h5>Get Started</h5><a href="contact.html">Free Assessment</a><a href="apply.html">Become a Tutor</a><a href="admin/login.html">Staff Login</a></div><div><h5>Legal</h5><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a><a href="service-agreement.html">Service Agreement</a></div><div><h5>Contact</h5><a href="mailto:support@tjtutoring.academy">support@tjtutoring.academy</a><a href="tel:+14842125373">+1 (484) 212-5373</a><address class="footer-address">TJ Tutoring Academy<br>32 N Gould Str. Ste R<br>Sheridan, WY 82001</address></div></div><div class="footer-bottom"><span>© <span class="year">2026</span> TJ Tutoring Academy</span><span>Online tutoring for families worldwide</span></div></div></footer>
+<script src="api.js"></script>
+<script src="main.js"></script>
+<script>
+  const form = document.getElementById('applyForm');
+  const alertBox = document.getElementById('formAlert');
+  const submitBtn = document.getElementById('submitBtn');
+  function showAlert(kind, text) {
+    alertBox.textContent = text;
+    alertBox.className = 'form-alert show ' + kind;
+  }
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    alertBox.className = 'form-alert';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting...';
+    const payload = {
+      full_name: form.full_name.value.trim(),
+      email: form.email.value.trim(),
+      phone: form.phone.value.trim(),
+      location: form.location.value.trim() || undefined,
+      subjects: form.subjects.value.trim(),
+      levels: form.levels.value.trim() || undefined,
+      qualification: form.qualification.value.trim(),
+      years_experience: form.years_experience.value ? parseInt(form.years_experience.value, 10) : 0,
+      availability: form.availability.value.trim() || undefined,
+      resume_url: form.resume_url.value.trim() || undefined,
+      cover_note: form.cover_note.value.trim() || undefined,
+    };
+    try {
+      await apiPost('/applications', payload);
+      showAlert('success', "Application received — we'll be in touch within 5 working days.");
+      form.reset();
+    } catch (err) {
+      showAlert('error', err.details ? fieldErrors(err.details) : err.message);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit Application';
+    }
+  });
+</script>
+</body></html>

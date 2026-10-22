@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+  <title id="title">One-to-one online tutoring</title>
+  <desc id="desc">A student learning at home with a tutor on a laptop during an online lesson, surrounded by international learning cues.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17304b"/>
+      <stop offset="1" stop-color="#0b1425"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fbff"/>
+      <stop offset="1" stop-color="#dfeef3"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect x="18" y="18" width="864" height="644" rx="42" fill="url(#bg)" stroke="#29435b" stroke-width="2"/>
+  <circle cx="750" cy="112" r="100" fill="#65c7e8" opacity=".08"/>
+  <circle cx="150" cy="565" r="130" fill="#16a6a0" opacity=".08"/>
+
+  <!-- ambient labels -->
+  <g font-family="Arial, sans-serif" font-weight="700">
+    <rect x="70" y="75" width="168" height="44" rx="22" fill="#102238" stroke="#36536b"/>
+    <text x="154" y="103" text-anchor="middle" fill="#9ee5f2" font-size="15">LIVE • 1:1 LESSON</text>
+    <rect x="650" y="525" width="156" height="44" rx="22" fill="#16a6a0"/>
+    <text x="728" y="553" text-anchor="middle" fill="#fff" font-size="14">PERSONALISED</text>
+  </g>
+
+  <!-- desk -->
+  <rect x="90" y="540" width="720" height="14" rx="7" fill="#5f7890"/>
+  <rect x="130" y="554" width="22" height="70" rx="11" fill="#334a61"/>
+  <rect x="748" y="554" width="22" height="70" rx="11" fill="#334a61"/>
+
+  <!-- laptop -->
+  <g filter="url(#shadow)">
+    <rect x="248" y="210" width="404" height="266" rx="20" fill="#101a29" stroke="#71869a" stroke-width="4"/>
+    <rect x="266" y="228" width="368" height="230" rx="11" fill="url(#screen)"/>
+    <path d="M222 481h456l-33 41H255z" fill="#8da0b0"/>
+    <path d="M390 491h120l-10 12H400z" fill="#52687b"/>
+  </g>
+
+  <!-- tutor video window -->
+  <rect x="286" y="248" width="164" height="142" rx="12" fill="#173e56"/>
+  <circle cx="368" cy="294" r="27" fill="#e7b18f"/>
+  <path d="M331 360c7-38 67-38 74 0z" fill="#16a6a0"/>
+  <path d="M340 280c9-22 45-28 58 1-10-5-19-6-31-1-9 5-18 4-27 0z" fill="#17243a"/>
+  <rect x="303" y="366" width="76" height="9" rx="4.5" fill="#9ed5e2" opacity=".8"/>
+  <rect x="303" y="348" width="48" height="8" rx="4" fill="#fff" opacity=".55"/>
+  <text x="306" y="267" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="700">TUTOR</text>
+
+  <!-- lesson board -->
+  <rect x="470" y="248" width="140" height="142" rx="12" fill="#fff" stroke="#d8e2ea"/>
+  <text x="488" y="274" font-family="Arial,sans-serif" font-size="12" fill="#526174" font-weight="700">Today's focus</text>
+  <path d="M490 309h83M490 333h62M490 357h90" stroke="#16a6a0" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="585" cy="309" r="10" fill="#16a6a0" opacity=".18"/>
+  <path d="M580 309l4 4 7-9" fill="none" stroke="#0d7f7b" stroke-width="2.5"/>
+
+  <!-- student -->
+  <g>
+    <circle cx="175" cy="425" r="48" fill="#e7b18f"/>
+    <path d="M126 421c-1-44 78-62 99-3-23-13-49-17-67-4-11 8-20 8-32 7z" fill="#22283a"/>
+    <path d="M117 536c9-77 117-77 128 0z" fill="#2d6f8b"/>
+    <path d="M138 474c16 17 62 17 80 0l-7 38c-22 17-45 17-66 0z" fill="#f1c6a5"/>
+    <circle cx="158" cy="429" r="4" fill="#17243a"/><circle cx="191" cy="429" r="4" fill="#17243a"/>
+    <path d="M166 449c8 7 17 7 25 0" fill="none" stroke="#8b4f45" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- notebook and mug -->
+  <rect x="670" y="468" width="98" height="62" rx="8" fill="#fff" transform="rotate(-4 670 468)"/>
+  <path d="M686 486h62M686 501h48" stroke="#65c7e8" stroke-width="5" stroke-linecap="round"/>
+  <rect x="105" y="475" width="52" height="45" rx="8" fill="#16a6a0"/>
+  <path d="M156 487c22-2 22 24 0 21" fill="none" stroke="#16a6a0" stroke-width="8"/>
+
+  <!-- country chips -->
+  <g font-family="Arial,sans-serif" font-weight="700">
+    <rect x="688" y="166" width="92" height="40" rx="20" fill="#fff"/>
+    <text x="734" y="191" text-anchor="middle" font-size="22">🇺🇸</text>
+    <rect x="590" y="118" width="92" height="40" rx="20" fill="#fff"/>
+    <text x="636" y="143" text-anchor="middle" font-size="22">🇬🇧</text>
+    <rect x="748" y="228" width="92" height="40" rx="20" fill="#fff"/>
+    <text x="794" y="253" text-anchor="middle" font-size="22">🇨🇦</text>
+    <rect x="690" y="278" width="92" height="40" rx="20" fill="#fff"/>
+    <text x="736" y="303" text-anchor="middle" font-size="22">🇦🇺</text>
+  </g>
+
+  <!-- progress badge -->
+  <g filter="url(#shadow)">
+    <rect x="58" y="155" width="178" height="92" rx="18" fill="#fff"/>
+    <text x="78" y="181" font-family="Arial,sans-serif" font-size="12" fill="#526174" font-weight="700">WEEKLY PROGRESS</text>
+    <text x="78" y="215" font-family="Arial,sans-serif" font-size="25" fill="#0f172a" font-weight="700">81%</text>
+    <text x="136" y="214" font-family="Arial,sans-serif" font-size="12" fill="#16a6a0" font-weight="700">↑ improving</text>
+    <rect x="78" y="226" width="132" height="7" rx="3.5" fill="#e2ebf0"/>
+    <rect x="78" y="226" width="107" height="7" rx="3.5" fill="#16a6a0"/>
+  </g>
+</svg>

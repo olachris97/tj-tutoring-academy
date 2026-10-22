@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — TJ Tutoring Academy</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="dash-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="stamp">TJ</span>TJ Admin</div>
+
+    <button class="nav-item active" data-view="overview">📊 Overview</button>
+    <button class="nav-item" data-view="messages">✉️ Messages <span class="count" id="navMsgCount">0</span></button>
+    <button class="nav-item" data-view="applications">📝 Applications <span class="count" id="navAppCount">0</span></button>
+    <button class="nav-item" data-view="account">⚙️ Account</button>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-admin">
+        Signed in as<strong id="sidebarAdminName">—</strong>
+      </div>
+      <button class="nav-item" id="logoutBtn">↩ Log Out</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <!-- ================= Overview ================= -->
+    <section class="view active" id="view-overview">
+      <div class="main-head">
+        <div>
+          <h1>Overview</h1>
+          <div class="sub">What's come in recently, at a glance.</div>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="label">Total Messages</div>
+          <div class="value" id="statMsgTotal">—</div>
+          <div class="delta" id="statMsgNew">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">New (unread)</div>
+          <div class="value" id="statMsgNewCount">—</div>
+          <div class="delta">Needs a first look</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Total Applications</div>
+          <div class="value" id="statAppTotal">—</div>
+          <div class="delta" id="statAppSubmitted">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Shortlisted Tutors</div>
+          <div class="value" id="statAppShortlisted">—</div>
+          <div class="delta">Ready for a demo lesson</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Recent Admin Activity</h3>
+        <div id="activityList"><div class="empty-state">Loading…</div></div>
+      </div>
+    </section>
+
+    <!-- ================= Messages ================= -->
+    <section class="view" id="view-messages">
+      <div class="main-head">
+        <div>
+          <h1>Contact Messages</h1>
+          <div class="sub">Enquiries submitted through the public contact form.</div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="pill-filters" id="msgStatusFilters">
+          <button class="pill active" data-status="">All</button>
+          <button class="pill" data-status="new">New</button>
+          <button class="pill" data-status="read">Read</button>
+          <button class="pill" data-status="responded">Responded</button>
+          <button class="pill" data-status="archived">Archived</button>
+        </div>
+      </div>
+
+      <div id="messagesTableWrap"><div class="empty-state">Loading…</div></div>
+      <div class="pagination" id="messagesPagination"></div>
+    </section>
+
+    <!-- ================= Applications ================= -->
+    <section class="view" id="view-applications">
+      <div class="main-head">
+        <div>
+          <h1>Teacher Applications</h1>
+          <div class="sub">Tutor applications submitted through the public apply form.</div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="pill-filters" id="appStatusFilters">
+          <button class="pill active" data-status="">All</button>
+          <button class="pill" data-status="submitted">Submitted</button>
+          <button class="pill" data-status="reviewing">Reviewing</button>
+          <button class="pill" data-status="shortlisted">Shortlisted</button>
+          <button class="pill" data-status="hired">Hired</button>
+          <button class="pill" data-status="rejected">Rejected</button>
+        </div>
+      </div>
+
+      <div id="applicationsTableWrap"><div class="empty-state">Loading…</div></div>
+      <div class="pagination" id="applicationsPagination"></div>
+    </section>
+
+    <!-- ================= Account ================= -->
+    <section class="view" id="view-account">
+      <div class="main-head">
+        <div>
+          <h1>Account</h1>
+          <div class="sub">Manage your admin login.</div>
+        </div>
+      </div>
+
+      <div class="panel" style="max-width: 420px;">
+        <h3>Change Password</h3>
+        <div id="pwAlert" class="form-alert"></div>
+        <form id="changePasswordForm">
+          <div class="field">
+            <label for="currentPassword">Current password</label>
+            <input type="password" id="currentPassword" required autocomplete="current-password">
+          </div>
+          <div class="field">
+            <label for="newPassword">New password</label>
+            <input type="password" id="newPassword" required minlength="8" autocomplete="new-password">
+            <div class="hint" style="color: var(--ink-soft); font-size: 12px; margin-top: 5px;">At least 8 characters.</div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="pwSubmitBtn">Update Password</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ================= Detail slide-over ================= -->
+<div class="overlay" id="overlay">
+  <div class="detail-panel" id="detailPanel"></div>
+</div>
+
+<script>window.TJ_API_BASE = window.TJ_API_BASE || 'https://tj-tutoring-api.onrender.com';</script>
+<script src="api.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
