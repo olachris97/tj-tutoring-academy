@@ -1,6 +1,7 @@
 from app.core.errors import NotFoundApiError
 from app.extensions import db
 from app.models import TeacherApplication, log_action
+from app.services.mailer import notify_new_application
 
 
 class ApplicationService:
@@ -21,6 +22,7 @@ class ApplicationService:
         )
         db.session.add(application)
         db.session.commit()
+        notify_new_application(application)
         return application
 
     def list(self, status=None, page=1, per_page=20):

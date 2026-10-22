@@ -32,3 +32,11 @@ class Config:
 
     # Where a real deployment would send admin alerts for new applications/messages
     NOTIFY_EMAIL = os.environ.get("NOTIFY_EMAIL", "hello@tjtutoring.academy")
+    # Optional SMTP notifications. Submissions are saved even if email is unavailable.
+    SMTP_HOST = os.environ.get("SMTP_HOST")
+    SMTP_PORT = int(os.environ.get("SMTP_PORT", "587"))
+    SMTP_USERNAME = os.environ.get("SMTP_USERNAME")
+    SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD")
+    SMTP_USE_TLS = os.environ.get("SMTP_USE_TLS", "true").lower() in ("1", "true", "yes")
+    SMTP_USE_SSL = os.environ.get("SMTP_USE_SSL", "false").lower() in ("1", "true", "yes")
+    MAIL_FROM = os.environ.get("MAIL_FROM") or NOTIFY_EMAIL

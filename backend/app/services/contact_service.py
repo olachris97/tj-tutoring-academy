@@ -1,6 +1,7 @@
 from app.core.errors import NotFoundApiError
 from app.extensions import db
 from app.models import ContactMessage, log_action
+from app.services.mailer import notify_new_contact
 
 
 class ContactService:
@@ -15,6 +16,7 @@ class ContactService:
         )
         db.session.add(message)
         db.session.commit()
+        notify_new_contact(message)
         return message
 
     def list(self, status=None, page=1, per_page=20):
